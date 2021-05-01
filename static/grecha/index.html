@@ -31,6 +31,7 @@
  .menudiv img {margin-top: 14px;}  .menudiv div {float: left;}
  .logo {margin-right: 30px;}
  .links-item { display: inline-block; margin-right: 15px; margin-top: 20px; font-family: Open Sans; font-size: 12pt; font-weight: 500;}
+ .mob {display: none;}
 
 
   .content {margin: 0 auto; max-width: 1200px; padding-left: 30px; padding-right: 30px;}
@@ -38,15 +39,30 @@
   .start {margin-bottom: 40px;}
   .contentstart {height: 80px; max-width: 100%; }
   .contentback {margin: 0 auto; width: 100%; padding-top: 20px; background: #F2F7FA url() no-repeat; background-size: 100%; padding-bottom: 20px; margin-bottom: 40px; float: left; }
-  .price {margin: 0 auto; width: 100%; height: 300px; background: #FFF url() no-repeat; background-size: 100%; padding-bottom: 20px; float: left; }
+  .contentback2 {margin: 0 auto; width: 100%; padding-top: 20px; background: #F2F7FA url() no-repeat; background-size: 100%; padding-bottom: 20px; margin-top: 20px; float: left; }
+  .price {margin: 0 auto; width: 100%; height: 300px; background: #FFF url() no-repeat; background-size: 100%; padding-bottom: 80px; float: left; }
   .price img {margin-bottom: 0px;} .price p {max-width: 60%;}
   .info {margin: 0 auto; width: 100%; height: 60px; float: left; font-family: Open Sans; font-size: 12pt; font-weight: 500; color: #C4C4C4; }
 
   p {margin-bottom: 20px; font-family: Open Sans; font-size: 14pt; line-height: 22pt; float: left; width: 80%; }
-  .h2 {font-family: Open Sans; font-size: 21pt; line-height: 28pt; font-weight: 300; text-align: left; padding-top: -20px;  margin-bottom: 20px; width: 70%; }
+  .h2 {font-family: Open Sans; font-size: 21pt; line-height: 28pt; font-weight: 300; text-align: left; padding-top: -20px;  margin-bottom: 20px; width: 90%; }
   h3 {font-family: Open Sans; font-size: 16pt; font-weight: 600; line-height: 24pt; margin-bottom: 10px; color: #000; }
   .question {width: 40%; min-height: 200px; margin-right: 20px; margin-bottom: 20px; font-family: Open Sans; font-size: 13pt; line-height: 22pt; color: #4B4B4B; float: left; }
   .question:last-child { margin-bottom: 60px; }
+
+  @media screen and (max-width: 810px) {
+    body {margin:0; padding:0; background: #fff url() no-repeat; }
+    .content img {max-width: 90%; margin-bottom: -30px;}
+    .full {display: none;}
+    .mob {display: block; margin-top: 30px;}
+    .question:last-child { margin-bottom: 30px; }
+    .mobl {display: block; margin-bottom: 20px;}
+    p {width: 100%; }
+    .price p {max-width: 100%;}
+    .price {padding-bottom: 30px;}
+    .h2 {font-size: 16pt; line-height: 24pt; padding-top: 10px; }
+   .question {width: 100%; min-height: 200px;}
+  }
 </style>
 
 
@@ -69,52 +85,60 @@
 
     <div class="start">
       <div class="content">
-        <img src="/grecha/zag.svg">
-      <p class="h2">Обычно мы готовим логотипы около месяца, но сейчас решились делать хорошие варианты
-        в&nbsp;максимально сжатые сроки. Поэтому 10&nbsp;дней – и&nbsp;готовый результат будет у&nbsp;вас.</p>
+        <img class="full" src="/grecha/zag.svg">
+        <img class="mob" src="/grecha/headmob.svg">
+      <p class="h2">Мы, команда «Макета», хотим проявить себя в&nbsp;крупном проекте – но также хотим помочь и&nbsp;тем, кому сложно общаться
+        с&nbsp;крупными студиями. Поэтому сделали пакет «Греча», где результат готовится всего 10&nbsp;дней.</p>
 
-        <div class="question"><h3>Как выглядит процесс?</h3>
-          Вы пишете нам в&nbsp;мессенджере. Мы&nbsp;заключаем договор,
-          формируем вместе задачу и&nbsp;начинаем работать. Через 10&nbsp;дней присылаем готовый архив с&nbsp;вариантами логотипа — на почту и&nbsp;в&nbsp;диалог. </div>
+        <div class="question"><h3>Как будем общаться?</h3>
+          Мы не любим делиться результатами через почту, так как это очень сильно снижает отзывчивость – поэтому свяжемся в&nbsp;любом удобном вам
+        мессенджере и&nbsp;будем оставаться там до сдачи архива. Договор и&nbsp;ТЗ составим тоже там. </div>
 
           <div class="question"><h3>Что я получу?</h3>
-            В итоге вы получите на руки векторные исходники, картинки в png, памятку с&nbsp;правилами использования.
-            Если потребуется ещё что-то, вы&nbsp;всегда можете попросить – дадим скидку на&nbsp;дальнейшую разработку.</div>
+            Через неделю и&nbsp;+3 дня вы получите архив с&nbsp;векторными и&nbsp;растровыми вариантами значка, минимальное руководство по его использованию,
+          а&nbsp;также референсы, как его можно будет адаптировать в&nbsp;будущем под разные носители. </div>
 
-            <div class="question"><h3>Кто может участвовать?</h3>
-              Бизнес любых размеров, а&nbsp;также персоны любой степени известности – главное, чтобы всё было законное. Мы сделаем хорошие варианты и&nbsp;для компаний,
-              и&nbsp;для личного бренда – поэтому так важно чётко составить «задачу» (мы с&nbsp;этим поможем).</div>
+            <div class="question"><h3>Почему такая стоимость?</h3>
+              Мы хотим делать хорошие логотипы не только для крупного бизнеса, но и&nbsp;мелкого — увы, каким бы перспективным не была бы идея,
+            часто она начинается с&nbsp;простого текстового логотипа, из-за чего страдает узнаваемость. Мы хотим это исправить!</div>
 
               <div class="question"><h3>Какие ограничения на тарифе?</h3>
                 Мы уверены, что получившийся результат максимально вас устроит, поэтому предоставляем не больше трёх версий на один бренд,
-                а&nbsp;также не вносим правки после презентации. Но результат можно развивать уже на полном тарифе .</div>
+                а&nbsp;также не вносим правки после презентации. Но результат можно развивать уже на полном тарифе.</div>
 
                 <div class="question"><h3>А делаете афиши или сайты?</h3>
-                Да! Занимаемся в том числе разработкой любого другого графа и&nbsp;созданием интерфейсов
-                для сайтов и&nbsp;мобильных приложений. Но по другой стоимости :) </div>
+                «Макет» занимается любой графикой и&nbsp;интерфейсами – к нам можно приходить за&nbsp;обложками, брендингом, сайтами и&nbsp;руководствами.
+              За такими вещами пишите на <i>hi@maket.studio</i></div>
 
-                <div class="question"><h3>С вами надёжно?</h3>
-                Да, поскольку мы работаем по договору и&nbsp;предоставляем все свои реквизиты. Оплата пройдёт как самозанятому.</div>
+                <div class="question"><h3>Это безопасно?</h3>
+                Всё общение с командой проходит через мессенджеры, поэтому у вас всегда будут контакты команды. Оплата может пройти
+              как вам удобно, в том числе и на полные банковские реквизиты.</div>
 
 
   </div></div>
 
-  <img width="100%" src="/grecha/logotypes.svg">
+  <img class="full" width="100%" src="/grecha/logotypes.svg">
+  <img class="mobl" width="100%" src="/grecha/logotypesm.svg">
 
   <div class="contentback">
     <div class="content">
-    <p>Над вариантом работают два человека — арт-директор и дизайнер. После завершения работы мы показываем вам как пришли
-    к итоговому варианту, даём советы. Нам можно доверять — это именно мы участвовали в конкурсе на разработку <a href="https://rusjohn.ru/projects/spbtransport/">логотипа общественного
-  транспорта</a> в Санкт-Петербурге. А ещё ранее наша команда работала вместе с крупными IT-компаниями, такими как ВКонтакте.</p>
+    <p>Над вариантом работают два человека — арт-директор и&nbsp;дизайнер. После завершения работы мы показываем вам как пришли
+    к итоговому варианту, даём рекомендации по дальнейшим действиям. Нам есть на что ссылаться, ведь это мы делали <a href="https://rusjohn.ru/projects/spbtransport/">логотипа общественного
+  транспорта</a> в Санкт-Петербурге, а&nbsp;также помогали развиваться подразделениям ВКонтакте.</p>
   </div></div>
 
   <div class="price">
       <div class="content"><img src="/grecha/price.svg">
         <p class="h2">После 31 мая цена повысится на 5 тысяч</p>
 
-        <p>Готовы ответить вам в любой момент! Пишите в <a href="https://t.me/rusjohn">Телеграм</a> или <a href="https://vk.me/maketstudio">ВКонтакте</a>.</p>
+        <p>Составим бриф и договор, после чего сразу приступим к работе. Пишите в&nbsp;<a href="https://t.me/rusjohn">Телеграм</a> или <a href="https://vk.me/maketstudio">ВКонтакте</a>.</p>
     </div>
     </div>
+
+    <div class="contentback">
+      <div class="content">
+      <p><b>Вы пишете нам</b> → составляем бриф → заключаем договор → работаем → сдаём результат</p>
+    </div></div>
 
     <div class="info">
       <div class="content">2021 • hi@maket.design</div>
