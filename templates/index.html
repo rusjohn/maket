@@ -19,20 +19,31 @@
 
 {% block content %}
 
+<link rel="preconnect" href="https://fonts.gstatic.com">
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
+
 <style>
-    html {background: #F2F7FA;}
-    body {min-width: 800px}
-    section {width: 80%;}
-    .zag {font-size: 40pt; line-height: 60px; font-family: 'Inter', sans-serif; font-weight: 300; color: #000; margin-top: 10px; }
-    p {max-width: 600px; font-size: 14pt; line-height: 26px; font-family: 'Inter', sans-serif; font-weight: 400; color: #000; margin-top: 20px; margin-bottom: 30px;}
+   body {background: #F2F7FA; }
+
+   #content {margin: 0 auto; margin-top: 10%; width: 60%; max-width: 500px; background: #fff; border-radius: 20px;}
+   .logo {text-align: center; padding: 40px 0 0 0; }
+   .zag {text-align: center; font-size: 32pt; font-family: Inter; }
+   .about {text-align: center; font-size: 18pt; line-height: 32px; font-family: Inter; font-weight: 300; padding: 20px; }
+      p {font-size: 12pt; line-height: 24px; }
+      a {color: #A8A8A8; text-decoration: none; border-bottom: 1px solid #D8D8D8; padding-bottom: 3px; }
+      a:hover {color: #001F8E; text-decoration: none; border-bottom: 1px solid #CAD6FF; padding-bottom: 3px; }
+
+  .button {text-align: center; padding-top: 10px; padding-bottom: 20px;}
+      button {padding: 15px 25px 15px 25px; border-radius: 80px; font-family: Inter; font-weight: 300; font-size: 14pt; border: 0px solid transparent; border-color: #fff; background: #E5EFF5; color: #000;}
+      button:hover {background: #CCDEE9; color: #000;}
 </style>
 
-    <img src="https://maket.studio/maket.svg" width="150" >
-       <h1 class="zag">
-  Брендинг, сайты, материалы и&nbsp;готовые&nbsp;продукты
-</h1>
-
-<p>Разрабатываем любые проекты — от логотипа для маленького стартапа до целого СМИ. Верим и надеемся, что сделаем дизайн в России чуть лучше и удобнее, а людей счастливее.</p>
-<p><a href="https://t.me/maketstudio_bot">Бот для связи</a>, <a href="https://t.me/maketstudio">канал в Telegram</a>.</p>
+<div id="content">
+  <div class="logo"><img src="/maket/logomaket.svg" width="100"></div>
+  <div class="zag"></div>
+  <div class="about">Дизайним и&nbsp;верстаем для&nbsp;любых масштабов. Делаем брендинг, интерфейсы&nbsp;и&nbsp;целые продукты</div>
+ <div class="button"><button>Связаться в Telegram</button>
+ <p><a href="https://t.me/maketstudio">наш канал</a></p></div>
+</div>
 
 {% endblock content %}
